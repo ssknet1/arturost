@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Артур Остапенко — Дизайн</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+      <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-bg-deco"></div>
+  <div class="menu-inner">
+    <ul class="menu-nav-links">
+      <li><a href="#about"    class="menu-link"><span class="link-num">01</span>Обо мне</a></li>
+      <li><a href="#services" class="menu-link"><span class="link-num">02</span>Услуги</a></li>
+      <li><a href="#cases"    class="menu-link"><span class="link-num">03</span>Кейсы</a></li>
+      <li><a href="#faq"      class="menu-link"><span class="link-num">04</span>FAQ</a></li>
+      <li><a href="#contact"  class="menu-link"><span class="link-num">05</span>Связаться</a></li>
+    </ul>
+
+    <div class="menu-contact">
+      <div class="menu-contact-label">Связаться со мной</div>
+      <div class="menu-social-links">
+        <a href="https://t.me/ssknet" class="menu-social-link" target="_blank">
+          <span class="menu-social-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.26 13.928l-2.939-.918c-.64-.203-.652-.64.135-.954l11.566-4.458c.537-.194 1.006.131.872.623z"/></svg>
+          </span>
+          Telegram
+        </a>
+        <a href="https://wa.me/79884756974" class="menu-social-link" target="_blank">
+          <span class="menu-social-icon">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          WhatsApp
+        </a>
+         <a href="https://instagram.com/ssknettm" class="menu-social-link" target="_blank">
+          <span class="menu-social-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>          </span>
+          Instagram
+        </a>
+        <a href="https://www.behance.net/ssknet" class="menu-social-link" target="_blank">
+          <span class="menu-social-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.756-5.564-5.407 0-3.454 2.327-5.625 5.463-5.625 3.065 0 4.95 1.749 5.051 4.688.006.191.006.383-.001.574h-7.8c.084 1.591 1.028 2.354 2.286 2.354 1.061 0 1.7-.496 2.026-1.234L23.726 17zm-5.101-7.25c-1.096 0-1.935.64-2.204 1.797h4.34c-.085-1.112-.82-1.797-2.136-1.797zM6.9 7c1.878 0 3.272.906 3.272 2.668 0 1.052-.574 1.843-1.453 2.268.993.377 1.691 1.168 1.691 2.438 0 1.974-1.497 3.126-3.505 3.126H0V7h6.9zm-.38 4.542c.842 0 1.346-.426 1.346-1.138 0-.682-.504-1.078-1.3-1.078H3V11.542h3.52zm.202 4.398c.884 0 1.418-.462 1.418-1.22 0-.734-.534-1.154-1.459-1.154H3v2.374h3.722z"/></svg>          </span>
+          Behance
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#hero" class="logo">Artur Ostapenko</a>
+  <button class="burger" id="burgerBtn" aria-label="Меню">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <p class="hero-eyebrow">Дизайнер Артур Остапенко</p>
+  <h1>Дизайн, который<br><em class="text-accent">говорит</em><br>за себя</h1>
+  <p class="hero-sub">Создаю визуальные идентичности, интерфейсы и бренды, которые остаются в памяти надолго.</p>
+  <div class="hero-cta">
+    <a href="#cases" class="btn">Смотреть работы</a>
+    <a href="#services" class="btn ghost">Мои услуги</a>
+  </div>
+  <div class="hero-line"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-text reveal">
+    <span class="section-label">Чем занимаюсь</span>
+    <h2>Превращаю идеи в<br><em class="text-accent">визуальный язык</em></h2>
+    <p>Вера есть всегда: великий дизайн — это не украшение, а инструмент коммуникации. Каждый проект начинается с глубокого погружения в бизнес клиента.</p>
+    <p style="margin-top:16px;">От стартапов до глобальных брендов — помогаю компаниям выстраивать визуальную идентичность, которая работает на результат.</p>
+    <a href="#contact" class="btn" style="margin-top:40px; display:inline-block;">Узнать больше</a>
+  </div>
+  <div class="about-stats reveal reveal-delay-2">
+    <div class="stat-box"><div class="stat-num">50+</div><div class="stat-label">Проектов завершено</div></div>
+    <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Года на рынке</div></div>
+    <div class="stat-box"><div class="stat-num">96%</div><div class="stat-label">Довольных клиентов</div></div>
+    <div class="stat-box"><div class="stat-num">40%</div><div class="stat-label">Работ заканчиваю раньше срока</div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-head">
+    <div class="h-line"></div>
+    <span class="section-label reveal">Что делаю</span>
+    <h2 class="reveal reveal-delay-1">Мои услуги</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div><h3>Брендинг & Айдентика</h3>
+      <p>Создаю целостные визуальные системы: логотип, фирменный стиль, гайдлайны.</p>
+      <div class="service-tags"><span class="tag">Логотип</span><span class="tag">Гайдлайн</span><span class="tag">Фирменный стиль</span></div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-num">02</div><h3>UI/UX Дизайн</h3>
+      <p>Проектирую интерфейсы, которые понятны интуитивно и приятны в использовании.</p>
+      <div class="service-tags"><span class="tag">Веб-интерфейс</span><span class="tag">Мобильные приложения</span><span class="tag">Figma</span></div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-num">03</div><h3>Графический дизайн</h3>
+      <p>Визуальный контент для всех каналов: соцсети, рекламные кампании, полиграфия.</p>
+      <div class="service-tags"><span class="tag">SMM-контент</span><span class="tag">Реклама</span><span class="tag">Печать</span></div>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-num">04</div><h3>Веб-дизайн</h3>
+      <p>Разрабатываю сайты с чёткой структурой и эстетикой — с акцентом на конверсию.</p>
+      <div class="service-tags"><span class="tag">Лендинг</span><span class="tag">Корпоративный сайт</span><span class="tag">E-commerce</span></div>
+    </div>
+    <div class="service-card reveal reveal-delay-4">
+      <div class="service-num">05</div><h3>Упаковка & Полиграфия</h3>
+      <p>Создаю дизайн упаковки, который выделяется на полке. Этикетки, коробки, пакеты.</p>
+      <div class="service-tags"><span class="tag">Упаковка</span><span class="tag">Этикетки</span><span class="tag">Каталоги</span></div>
+    </div>
+    <div class="service-card reveal reveal-delay-5">
+      <div class="service-num">06</div><h3>Разработка сайта (Верстка)</h3>
+      <p>Оживляю дизайн вашего сайта</p>
+      <div class="service-tags"><span class="tag">HTML-CSS-JS</span><span class="tag">WordPress</span><span class="tag">Node.js / PHP</span><span class="tag">React / Next.js</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases">
+  <div class="section-head">
+    <div class="h-line"></div>
+    <span class="section-label reveal">Портфолио</span>
+    <h2 class="reveal reveal-delay-1">Избранные кейсы</h2>
+  </div>
+  <div class="cases-grid">
+    <div class="case-card case-1 reveal">
+      <div class="case-bg"></div>
+      <div class="case-info">
+        <div class="case-category">Брендинг · Финтех</div>
+        <div class="case-title">Way Pay — Ребрендинг платёжной платформы</div>
+        <div class="case-arrow">Смотреть кейс <span>→</span></div>
+      </div>
+    </div>
+    <div class="case-card case-2 reveal reveal-delay-1">
+      <div class="case-bg"></div>
+      <div class="case-info">
+        <div class="case-category">Упаковка · FMCG</div>
+        <div class="case-title">Hasl — Дизайн линейки напитков</div>
+        <div class="case-arrow">Смотреть кейс <span>→</span></div>
+      </div>
+    </div>
+    <div class="case-card case-3 reveal reveal-delay-2">
+      <div class="case-bg"></div>
+      <div class="case-info">
+        <div class="case-category">UI/UX · SaaS</div>
+        <div class="case-title">Tolen — Дизайн аналитической платформы</div>
+        <div class="case-arrow">Смотреть кейс <span>→</span></div>
+      </div>
+    </div>
+    <div class="case-card case-4 reveal reveal-delay-3">
+      <div class="case-bg"></div>
+      <div class="case-info">
+        <div class="case-category">Айдентика · Ресторан</div>
+        <div class="case-title">Kesen — Визуальный язык гастро-бара</div>
+        <div class="case-arrow">Смотреть кейс <span>→</span></div>
+      </div>
+    </div>
+    <div class="case-card case-5 reveal reveal-delay-4">
+      <div class="case-bg"></div>
+      <div class="case-info">
+        <div class="case-category">Forever · Тату Салон</div>
+        <div class="case-title">Лендинг призывающий к действиям</div>
+        <div class="case-arrow">Смотреть кейс <span>→</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-head">
+    <div class="h-line"></div>
+    <span class="section-label reveal">Вопросы и ответы</span>
+    <h2 class="reveal reveal-delay-1">Часто задаваемые<br>вопросы</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <div class="faq-q">Сколько будет стоить конкретно какая-либо улсуга? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Все зависит от объема работы, тяжелая/легкая, напишите мне и я сообщу вам точную цену. Цены не кусаются!)</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Сколько времени занимает разработка фирменного стиля? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Базовый брендинг (логотип + гайдлайн) занимает 3–4 недели. Полноценная айдентика — от 6 до 10 недель. Сроки фиксируются в договоре и соблюдаются.</div></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-1">
+      <div class="faq-q">Как выглядит процесс работы над проектом? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Начинаем с брифинга и исследования. Разрабатываем концепции, представляем, собираем обратную связь и доводим до финала. Клиент вовлечён на каждом этапе.</div></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-2">
+      <div class="faq-q">Сколько правок включено в стоимость? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Количество правок не ограничено.</div></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-3">
+      <div class="faq-q">Работаете ли вы с проектами из других городов и стран? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Да, работаю удалённо по всему миру через Telegram, Яндекс Телемост. Разница в часовых поясах — не проблема.</div></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-4">
+      <div class="faq-q">Что я получу на выходе? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Все исходники в форматах AI, PDF, SVG и PNG. Брендбук в PDF. Макеты Figma можно ссылкой. Гайдлайн по использованию. Полные права на использование.</div></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-5">
+      <div class="faq-q">Можно ли сделать дизайн сайта без разработки? <span class="faq-icon">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Конечно. Передаю готовые макеты в Figma с организованными слоями и компонентами. При необходимости проводим передачу проекта разработчикам.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / SOCIAL BLOCK -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-head">
+      <div class="h-line"></div>
+      <span class="section-label reveal">Связаться со мной</span>
+      <h2 class="reveal reveal-delay-1">Начнём работу<br><em class="text-accent">вместе?</em></h2>
+      <p class="contact-sub reveal reveal-delay-2">Напишите мне в удобный мессенджер — отвечу в течение пару часов и обсудим ваш проект.</p>
+    </div>
+    <div class="social-cards">
+      <a href="https://t.me/ssknet" class="social-card tg reveal" target="_blank">
+        <div class="social-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.26 13.928l-2.939-.918c-.64-.203-.652-.64.135-.954l11.566-4.458c.537-.194 1.006.131.872.623z"/></svg>
+        </div>
+        <div class="social-card-name">Telegram</div>
+        <div class="social-card-handle">@ssknet</div>
+      </a>
+      <a href="https://wa.me/79884756974" class="social-card wa reveal reveal-delay-1" target="_blank">
+        <div class="social-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="social-card-name">WhatsApp</div>
+        <div class="social-card-handle">+7 988 475-69-74</div>
+      </a>
+      <a href="https://instagram.com/ssknettm" class="social-card ig reveal reveal-delay-2" target="_blank">
+        <div class="social-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div class="social-card-name">Instagram</div>
+        <div class="social-card-handle">@ssknettm</div>
+      </a>
+      <a href="https://www.behance.net/ssknet" class="social-card bh reveal reveal-delay-3" target="_blank">
+        <div class="social-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+        </div>
+        <div class="social-card-name">Behance</div>
+        <div class="social-card-handle">Artur Ostapenko</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#hero" class="logo">Artur Ostapenko</a>
+      <p>Создаю дизайн, который помогает бизнесу расти и быть услышанным.</p>
+      <a href="https://t.me/ssknet" class="btn" style="margin-top:28px; display:inline-block;" target="_blank">Написать в Telegram</a>
+    </div>
+    <div class="footer-links">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#cases">Кейсы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="#">Брендинг</a></li>
+        <li><a href="#">UI/UX Дизайн</a></li>
+        <li><a href="#">Веб-дизайн</a></li>
+        <li><a href="#">Упаковка</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Социальные сети</h4>
+      <ul>
+        <li><a href="https://t.me/ssknet" target="_blank">Telegram</a></li>
+        <li><a href="https://wa.me/79884756974" target="_blank">WhatsApp</a></li>
+        <li><a href="https://instagram.com/ssknettm" target="_blank">Instagram</a></li>
+        <li><a href="https://www.behance.net/ssknet" target="_blank">Behance</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Ssknet Все права защищены.</span>
+    <span>Design by Artur Ostapenko</span>
+  </div>
+</footer>
+
+<script src='script/main.js'></script>
+
+</body>
+</html>
